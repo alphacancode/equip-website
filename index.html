@@ -5,635 +5,313 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./nav.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
-<body>
+<body class="bg-[#151515]">
     <!-- navigation bar start  -->
-    <nav class="p-5 bg-white shadow-sm md:flex md:items-center md:justify-between">
+    <nav class="sticky top-0 z-50 py-6 px-8 bg-[#151515] md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center">
-        <img src="./images/logo.png" alt="company logo" class="h-10 inline cursor-pointer">
+        <img src="./images/white-logo.svg" alt="company logo" class="h-6 md:h-10 inline cursor-pointer">
         <!-- nav icon -->
         <span class="text-3xl cursor-pointer mx-2 md:hidden block">
           <img src="./images/hamburger-icon.svg" name="menu" onclick="Menu(this)"></img>
         </span>
       </div>
       <!-- nav-items start  -->
-      <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] ">
-               <li class="mx-4 my-6 md:my-0 opacity-75">
-            <a href="#">Features</a>
-          </li">
-          <li class="mx-4 my-6 md:my-0 opacity-75">
-            <a href="#">Why Equip</a>
-          </li">
-          <li class="mx-4 my-6 md:my-0 opacity-75">
-            <a href="#">Pricing</a>
-          </li">
-          <li class="mx-4 my-6 md:my-0 opacity-75">
-            <a href="#">Reviews</a>
-          </li>
-   
-        <li class="mx-2 my-6 md:my-0">
+      <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-[#151515] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] ">   
           <a href="#">
-            <button class="px-8 py-2 border border-[#F2F2F2] rounded">Login</button>
-          </a>
-        </li class="mx-2 my-6 md:my-0">
-        <li>
-          <a href="#">
-            <button class="px-8 py-2 text-white rounded bg-[#4F46E5]">Start Free Trial</button>
+            <button class="px-8 py-2 text-white rounded-full border">CONTACT US</button>
           </a>
         </li>
       </ul>
       <!-- nav-items end  -->
     </nav>
     <!-- navigation bar end  -->
-    <!-- hero section + partner logo start  -->
-    <div class="p-8 md:p-16 mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 flex items-center md:max-w-screen-2xl mx-auto">
-          <!-- text -->
-          <div>
-            <h1 class="font-semibold text-3xl md:text-3xl"><span class="text-[#4F46E5]">#1 Alternative to HackerRank</span> for companies that want to spend money efficiently</h1>
-            <p class="md:max-w-lg text-lg mt-5 opacity-75">
-              Try Equip - #1 Affordable HackerRank alternative to assess developers for different skills 
-            </p>
-            <!-- buttons -->
-            <div class="flex-col mt-5">
-              <a href="#">
-                <button class="text-sm px-4 md:px-8 py-2 text-white rounded bg-[#4F46E5]">Start Free Trial</button>
-              </a>
-              <a href="#">
-                <button class="text-sm px-4 md:px-8 py-2 rounded text-[#4F46E5]">Request Demo →</button>
-              </a>
-            </div>
-            <p class="text-xs opacity-75 mt-5"><i>No credit card required</i></p>
-          </div>
-          <!-- text end  -->
-          <!-- img -->
-          <div class="mt-5 md:mt-0 flex justify-center">
-            <img src="./images/hero-img.png" alt="software image" class="">
-          </div>
-    </div>
-    <!-- partner logo -->
-    <div class="mx-auto max-w-screen-2xl mt-8">
-      <p class="text-sm md:text-lg opacity-75 text-center">— TRUSTED FOR ASSESSING CANDIDATES BY </p>
-      <!-- images  -->
-      <div class="p-4 md:p-2 mt-8 md:mt-12 grid grid-cols-3 md:grid-cols-6 flex justify-center gap-8">
-        <img  class="h-auto md:h-8"src="./images/partner-1.svg" alt="partner logo">
-        <img  class="h-auto md:h-8"src="./images/partner-2.svg" alt="partner logo">
-        <img  class="h-auto md:h-8"src="./images/partner-3.svg" alt="partner logo">
-        <img  class="h-auto md:h-8"src="./images/partner-4.svg" alt="partner logo">
-        <img  class="h-auto md:h-8"src="./images/partner-5.svg" alt="partner logo">
-        <img  class="h-auto md:h-8"src="./images/partner-6.svg" alt="partner logo">
-      </div>
-    </div>
-    </div>
-    <!-- hero section + partner logo end  -->
-    <!-- about hacker rank start  -->
-    <div class="bg-[#4F46E5] mt-8 md:mt-16 rounded-t-xl">
-      <div class="p-8 md:p-16 grid grid-cols-1 md:grid-cols-2 md:max-w-screen-2xl mx-auto">
-        <!-- text & logo start -->
-        <div>
-          <img class="h-12 md:h-14" src="./images/hacker-rank.png" alt="hackrank logo">
-          <h2 class="md:max-w-xl text-white font-semibold text-2xl md:text-3xl mt-8 mb-8" >Does Hackerrank have everything for your hiring needs?</p>
+   <!-- hero section start-->
+   <div class="bg-cover bg-no-repeat" style="background-image: url('./images/hero-background.svg');">
+    <div class="px-8 py-8 md:px-16 md:py-24  mx-auto md:max-w-screen-2xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 flex items-center">
+      <!-- headline -->
+      <div class="text-white">
+        <p class="text-xs md:text-sm mb-3 md:mb-4 opacity-70" >— Find Top Talent in Campus Hiring Drives</p>
+        <!-- changing text start  -->
+     <div class="text-xl md:text-4xl font-semibold mb-3">
+      <h1 class="pb-2"> Equip Tests Save</h1>
+      <div class="wrapper h-8 md:h-8 mb-5 md:mb-8">
+        <p>Time on</p>
+        <div class="words h-7 md:h-10 text-lg md:text-4xl ml-2">
+            <span class="text-[#FECC2C]">&nbsp;</span>
+            <span class="text-[#FECC2C]">Traveling</span>
+            <span class="text-[#FECC2C]"> Creating Content</span>
+            <span class="text-[#FECC2C]">Scheduling Tests</span>
+            <span class="text-[#FECC2C]">Grading Manually</span>
+            <span class="text-[#FECC2C]">Arranging Supervisors</span>
         </div>
-         <!-- text & logo end  -->
-         <!-- paragraph start -->
-         <div class="text-white">
-          <p class="text-sm md:text-lg opacity-90">HackerRank is a platform used by companies to assess the skills of developers. However, it can be expensive and difficult to use, making it challenging for companies with limited budgets to effectively evaluate developers.</p>
-          <p class="text-sm md:text-lg opacity-90 mt-8">In contrast, Equip is a simple and affordable platform that allows companies to easily create and administer assessments to evaluate the skills of developers. Its ready-to-use question banks and straightforward interface make it easy for companies to get started, even if they are not tech-savvy. Additionally, the platform offers a wide range of options for companies to choose from, allowing them to tailor their assessments to their specific needs and requirements.</p>
-           <!-- button -->
-        <a href="#">
-          <button class="text-[#4F46E5] rounded px-8 py-2 mt-8 bg-white">Start Free Trial</button>
+    </div>
+   </div>
+   <!-- changing text end -->
+         
+        <a target="_blank" href="https://equip.co/account/login/?providers=linkedin&next_url=https%3A%2F%2Fequip.co%2Faccount%2Frecruiter-onboarding%2F">
+          <button class="px-8 py-2 text-white text-sm md:text-lg rounded-full border">Start 14-day Free Trial</button>
         </a>
-        <!-- button end -->
-        </div>
-         <!-- paragrah end  -->
-      </div>
-    </div>
-    <!-- about hacker rank end -->
-    <!-- better alternative & features start  -->
-    <div class="p-8 md:p-16 mt-8 md:mt-16 md:max-w-screen-2xl mx-auto">
-      <!-- headline start -->
-      <div class="text-center">
-        <p class="text-xs md:text-lg opacity-75">— BETTER ALTERNATIVE</p>
-        <p class="font-semibold px-4 text-2xl md:text-3xl mt-5" >Equip Features which helps you <span class="text-[#4F46E5]">hire the best developers</span></p>
+        <p class="mt-5 md:mt-8 text-xs opacity-80"><i>* Test 25 candidates for Free</i></p>
       </div>
       <!-- headline end -->
-      <!-- features & images start -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
-        <!-- features card start  -->
-        <div class="max-w-xl mx-auto text-center">
-          <img class="w-3/4 mx-auto mb-5 mt-5 md:mt-0" src="./images/feature-1.svg" alt="features">
-          <h2 class="mb-3 text-xl font-semibold">Integrated Development Environment</h2>
-          <p class="text-sm md:text-lg">Our coding simulator provides candidates with coding platform where they can use <span class="text-[#4F46E5]">multiple programming languages</span> to achieve the desired solution.</p>
-           <!-- button -->
-        <a href="#">
-          <button class="text-[#4F46E5] rounded px-8 py-2 mt-5 bg-white">Check Programming tests →</button>
-        </a>
-        </div>
-        <!-- features card end  -->
-             <!-- features card start  -->
-             <div class="max-w-xl mx-auto text-center">
-              <img class="w-3/4 mx-auto mb-5 mt-5 md:mt-0" src="./images/feature-1.svg" alt="features">
-              <h2 class="mb-3 text-xl font-semibold">Ready made assessmentst</h2>
-              <p class="text-sm md:text-lg">Our question banks are <span class="text-[#4f46e5]">carefully curated</span> by industry experts which helps you assess developers the most efficient way possible.</p>
-               <!-- button -->
-            <a href="#">
-              <button class="text-[#4F46E5] rounded px-8 py-2 mt-5 bg-white">Check tests types →</button>
-            </a>
-            </div>
-            <!-- features card end  -->
-                 <!-- features card start  -->
-        <div class="max-w-xl mx-auto text-center">
-          <img class="w-3/4 mx-auto mb-5 mt-5 md:mt-0" src="./images/feature-1.svg" alt="features">
-          <h2 class="mb-3 text-xl font-semibold">AI Proctoring</h2>
-          <p class="text-sm md:text-lg">Don’t worry about <span class="text-[#4F46e5]">candidates cheating.</span> All the assessments are proctored using our advanced AI tools which constantly monitors the screen and camera of the candidates.</p>
-           <!-- button -->
-        <a href="#">
-          <button class="text-[#4F46E5] rounded px-8 py-2 mt-5 bg-white">Check Programming tests →</button>
-        </a>
-        </div>
-        <!-- features card end  -->
-             <!-- features card start  -->
-             <div class="max-w-xl mx-auto text-center">
-              <img class="w-3/4 mx-auto mb-5 mt-5 md:mt-0" src="./images/feature-1.svg" alt="features">
-              <h2 class="mb-3 text-xl font-semibold">ATS Integration</h2>
-              <p class="text-sm md:text-lg">We have integration with <span class="text-[#4F46E5]">Lever ATS system</span> to make your hiring process hassle free. You don’t have to worry about hidden charges!</p>
-               <!-- button -->
-            <a href="#">
-              <button class="text-[#4F46E5] rounded px-8 py-2 mt-5 bg-white">Check Programming tests →</button>
-            </a>
-            </div>
-            <!-- features card end  -->
+      <div class="flex justify-center mt-5 md:ml-auto">
+        <img class="h-1/5 drop-shadow-xl" src="./images/hero-illustration.svg" alt="">
       </div>
-      <!-- features & images end -->
-    </div>
-    <!-- better alternative & features end -->
-    <!-- how equip can help your company start -->
-    <div class="px-4 py-8 md:p-16 bg-[#4F46E5] mt-8 md:mt-16 rounded-xl">
-      <!-- gradient container start -->
-      <div class="text-white p-8 bg-gradient-to-r from-blue-800 to-blue-700 rounded-lg md:max-w-screen-2xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 flex items-center">
-          <!-- headline & checklist  -->
-          <div class="p-2 md:p-8">
-            <h2 class="text-white font-semibold text-2xl md:text-3xl mb-14" >How Equip can help your company</h2>
-             <!-- checklist -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <!-- items -->
-        <div class="flex">
-          <img class="h-6 mr-4" src="./images/check.svg" alt="checkmark" srcset="">
-          <p class="text-sm md:text-lg opacity-90">Save both time and money 
-            spent on hiring the good 
-            candidate</p>
-        </div>
-        <!-- items -->
-        <div class="flex">
-          <img class="h-6 mr-4" src="./images/check.svg" alt="checkmark" srcset="">
-          <p class="text-sm md:text-lg opacity-90">Helps you filter the developers 
-            who are willing to 
-            put on the effort</p>
-        </div>
-          <!-- items -->
-          <div class="flex">
-            <img class="h-6 mr-4" src="./images/check.svg" alt="checkmark" srcset="">
-            <p class="text-sm md:text-lg opacity-90">Eliminate bad hires 
-              significantly</p>
-          </div>
-            <!-- items -->
-        <div class="flex">
-          <img class="h-6 mr-4" src="./images/check.svg" alt="checkmark" srcset="">
-          <p class="text-sm md:text-lg opacity-90">ATS integrations to keep 
-            your hiring process efficient</p>
-        </div>
-        </div>
-        <!-- checklist end -->
-         <!-- button -->
-         <div class="text-center hidden md:block">
-          <a href="#">
-            <button class="text-[#4F46E5] rounded px-8 py-2 mt-8 bg-white">Start 14-day Free Trial →</button>
-          </a>
-        </div>
-          <!-- button end  -->
-          </div>
-          <!-- headline & checklist end -->
-           <!-- stats -->
-      <div class="max-w-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-        <!-- card -->
-        <div class="p-8 bg-[#4F56E5]  rounded-lg text-center">
-          <h2 class="mb-4 text-xl md:text-2xl text-[#FFB73E] font-semibold">40%</h2>
-          <p class="text-sm md:text-lg opacity-90">less time in hiring
-            the developers</p>
-        </div>
-        <!-- card end  -->
-        <!-- card -->
-        <div class="p-8 bg-[#4F56E5]   rounded-lg text-center">
-          <h2 class="mb-4 text-xl md:text-2xl text-[#FFB73E] font-semibold">90%</h2>
-          <p class="text-sm md:text-lg opacity-90">of small teams find 
-            Equip affordable</p>
-        </div>
-        <!-- card end  -->
-        <!-- card -->
-        <div class="p-8 bg-[#4F56E5]  rounded-lg text-center">
-          <h2 class="mb-4 text-xl md:ext-2xl text-[#FFB73E] font-semibold">95%</h2>
-          <p class="text-sm md:text-lg opacity-90">chance of avoiding 
-            bad hires</p>
-        </div>
-        <!-- card end  -->
-        <!-- card -->
-        <div class="p-8 bg-[#4F56E5]   rounded-lg text-center">
-          <h2 class="mb-4 text-xl md:text-2xl text-[#FFB73E] font-semibold">75%</h2>
-          <p class="text-sm md:text-lg opacity-90">uplift in candidate 
-            experience with 
-            the company</p>
-        </div>
-        <!-- card end  -->
-           <!-- button -->
-           <div class="text-center md:hidden">
-            <a href="#">
-              <button class="text-[#4F46E5] rounded px-8 py-2 mt-8 bg-white">Start 14-day Free Trial →</button>
-            </a>
-          </div>
-            <!-- button end  -->
-      </div>
-      <!-- stats end -->
-        </div>
-      </div>
-      <!-- gradient container end -->
-    </div>
-    <!-- how equip can help your company end -->
-    <!-- feature comparison start  -->
-    <div class="p-8 md:p-16 mt-8 md:-16 md:max-w-screen-2xl mx-auto">
-      <!-- headline start -->
-      <div class="text-center">
-        <p class="text-xs md:text-lg opacity-75 mb-2">— WHY CHOOSE EQUIP</p>
-        <h2 class="font-semibold px-4 text-2xl md:text-3xl mb-5" ><span class="text-[#4F46E5]">Feature</span> comparison</h2>
+      </div>    
+   </div>
+  
+   </div>
+   <!-- hero section end  -->
+    <!-- partners logo start  -->
+    <div class="p-8 md:px-16 max-w-screen-2xl mx-auto">
+     <div class="border-b pb-8">
+       <!-- headline start -->
+       <div>
+        <p class="text-white opacity-80 text-sm md:text-lg md:text-center">Trusted by Our Customers to Conduct Campus Placements at Top Universities and Colleges</p>
       </div>
       <!-- headline end -->
-      <!-- table start -->
-      <div class="border rounded-lg mt-16 w-full md:max-w-screen-xl mx-auto">
-        <table class="w-full border-spacing-3mx-auto">
-          <thead>
-            <tr>
-              <th class="p-8 text-xs md:text-lg text-[#4F46E5]">Features</th>
-              <th class="p-8" align="center">
-                <img class="h-16 md:h-10" src="./images/equip-logo.svg" alt="">
-              </th>
-              <th class="p-8" align="center">
-                <img class="h-full md:h-4" src="./images/hacker-rank.svg" alt="">
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr align="center">
-              <td class="text-xs md:text-lg p-8">Multiple choice questions </td>
-              <td class="p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="p-8">
-                <img class="h-4 md:h-5" src="./images/cross-red.svg" alt="">
-              </td>
-            </tr>
-            <tr class="bg-[#F5F5F5]" align="center">
-              <td class="text-xs md:text-lg p-8">Ready to use questions</td>
-              <td class="p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="p-8">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-            </tr>
-            <tr align="center">
-              <td class="text-xs md:text-lg p-8">AI Proctoring </td>
-              <td class="p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="p-8">
-                <img class="h-4 md:h-5" src="./images/info.svg" alt="">
-              </td>
-            </tr>
-            <tr class="bg-[#F5F5F5]" align="center">
-              <td class="text-xs md:text-lg p-8">ATS Integration </td>
-              <td class="p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="p-8">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-            </tr>
-            <tr align="center">
-              <td class="text-xs md:text-lg p-8">Importing content </td>
-              <td class="p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="text-lg p-8">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-            </tr>
-            <tr class="bg-[#F5F5F5]" align="center">
-              <td class="text-xs md:text-lg p-8">Session Recordings </td>
-              <td class="p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="p-8">
-                <img class="h-4 md:h-5" src="./images/cross-red.svg" alt="">
-              </td>
-            </tr>
-            <tr align="center">
-              <td class="text-xs md:text-lg p-8">Detect Plagiarism</td>
-              <td class="p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="p-8">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-            </tr>
-            <tr class="bg-[#F5F5F5]" align="center">
-              <td class="text-xs md:text-lg p-8">Question Randomisation to prevent </td>
-              <td class="text-lg p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="text-lg p-8">
-                <img class="h-4 md:h-5" src="./images/cross-red.svg" alt="">
-              </td>
-            </tr>
-            <tr align="center">
-              <td class="text-xs md:text-lg p-8">24/7 support for all plan types</td>
-              <td class="p-8 flex justify-center">
-                <img class="h-3 md:h-4" src="./images/check-green.svg" alt="">
-              </td>
-              <td class="p-8">
-                <img class="h-3 md:h-4" src="./images/info.svg" alt="">
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- logo images start -->
+      <div class="mt-8 pb-4 md:pb-8 max-w-xl my-auto mx-auto">
+     <div class="flex justify-between">
+       <!-- logo card start -->
+       <div class="">
+        <img class="mx-auto h-12 md:h-24 mb-4" src="./images/partner-logo-1.svg" alt="university logo">
+        <p class="text-white text-center opacity-90 text-sm">IIT Delhi</p>
       </div>
-      <!-- table end  -->
-      <!-- table end -->
-    </div>
-    <!-- feature comparison end -->
-    <!-- price difference start  -->
-    <div class="bg-[#4F46E5] mt-8 md:mt-16 rounded-t-xl">
-      <div class="p-8 md:p-16 md:max-w-screen-2xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
-          <!-- headline + paragraph start -->
-          <div> <h2 class="md:max-w-xl text-white font-semibold text-2xl md:text-4xl mb-8" >What’s the price difference?</h2>
-            <p class="text-sm md:text-lg md:max-w-2xl text-white opacity-90">As a startup or midsized company, you know the value of having a team of skilled developers. That's where Equip comes in. We've streamlined our operations to provide a personalized and high-quality experience for companies like yours. Whether you need to assess your current team or bring on new talent, we're here to help. Plus, our small team allows us to offer a more personal touch, making the evaluation process as smooth and efficient as possible. This is how we're able to keep our prices low.</p></div>
-          <!-- headline + paragraph end -->
-          <!-- price table start -->
-          <div>
-            <div class="grid grid-cols-2 border-2  border-dashed rounded-lg">
-              <div class="border-r-2 border-dashed  p-8" align="center">
-                <img class="h-14" src="./images/white-equip.svg" alt="equip logo">
-              </div>
-              <div class=" p-8" align="center">
-                <img class="h-14" src="./images/white-hackerrank.svg" alt="equip logo">
-              </div>
-              <div class="border-r-2 border-t-2   border-dashed p-8" align="center">
-                <h2 class="mb-4 text-xl md:text-2xl text-white font-semibold">1$ per candidate</h2>
-              </div>
-              <div class=" border-t-2 border-dashed  p-8" align="center">
-                <h2 class="mb-4 text-xl md:text-2xl text-white font-semibold">10$ per candidate</h2>
-              </div>
-            </div>
-            <!-- button start -->
-            <div class="text-center">
-              <p class="text-white mt-5 mb-5 opacity-90"><i>If you assess 100 candidates a month using Equip, then you’d</i></p>
-              <h2 class="mb-5 text-2xl text-[#FFB73E]  font-semibold">⭐️ Save $900 per month</h2>
-                <!-- button -->
-                <div class="">
-                  <a href="#">
-                    <button class="text-[#4F46E5] rounded px-8 py-2 bg-white">Start Free Trial</button>
-                  </a>
-            </div>
-            <!-- button end -->
+      <!-- logo card end -->
+          <!-- logo card start -->
+          <div class="">
+            <img class="mx-auto h-12 md:h-24 mb-4" src="./images/partner-logo-2.svg" alt="university logo">
+            <p class="text-white text-center opacity-90 text-sm">NMIMS</p>
           </div>
-          <!-- price table end -->
-        </div>
+          <!-- logo card end -->
+          <!-- logo card start -->
+          <div class="">
+            <img class="mx-auto h-12 md:h-24 mb-4" src="./images/partner-logo-3.svg" alt="university logo">
+            <p class="text-white text-center opacity-90 text-sm">IIT Bombay</p>
+          </div>
+          <!-- logo card end -->
+     </div>
       </div>
+      <!-- logo images end -->
+     </div>
+     </div>
+     <!-- partners logo end -->
+   <!-- efficient and effortless + icons start -->
+   <div class="p-8 md:p-16 mt-8 md:mt-8 md:max-w-screen-2xl mx-auto text-white">
+    <!-- headline -->
+    <div class="text-center">
+      <h2 class="text-xl md:text-3xl font-semibold">
+        Conduct 100% Efficient and Effortless Campus Hiring Drives
+      </h2>
     </div>
-    </div>
-    <!-- price difference end -->
-    <!-- better alternative start -->
-    <div class="p-8 md:p-16 mt-8 md:mt-16 md:max-w-screen-2xl mx-auto">
-      <!-- headline start -->
-      <div class="text-center">
-        <p class="text-xs md:text-lg opacity-75 mb-2">— BETTER ALTERNATIVE</p>
-        <h2 class="font-semibold px-4 text-2xl md:text-3xl" >Why Equip offers<span class="text-[#4F46E5]"> more value</span> for the price?</h2>
-      </div>
-      <!-- headline end -->
-       <!-- icons -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
-      <!-- icons card start  -->
+    <!-- headline -->
+    <!-- icons start  -->
+    <div class="mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- icons card start  -->
+            <div class="p-4 text-center">
+              <img class="h-12 md:h-auto mx-auto mb-5 mt-5 md:mt-0" src="./images/clipboard-list.svg" alt="features">
+              <h2 class="mb-3 text-lg md:text-xl font-semibold">Save Travel Costs</h2>
+              <p class="text-sm md:text-lg mx-auto">Conduct assessments without having to visit the college. Students can attempt them from their labs or homes.</p>
+            </div>
+            <!-- icons card end  -->
+                  <!-- icons card start  -->
       <div class="p-4 text-center">
-       <img class="mx-auto mb-5 mt-5 md:mt-0" src="./images/coins-icon.svg" alt="features">
-       <h2 class="mb-3 text-lg md:text-xl text-[#4f46e5] font-semibold">PAY AS YOU GO</h2>
-       <p class="text-sm md:text-lg mx-auto">Don't worry about hiring more developers. Our pay as you go model and scalable platform makes it easy to accommodate additional hires.</p>
-     </div>
-     <!-- icons card end  -->
-     <!-- icons card start  -->
-     <div class="p-4 text-center">
-       <img class="mx-auto mb-5 mt-5 md:mt-0" src="./images/shield.svg" alt="features">
-       <h2 class="mb-3 text-lg md:text-xl text-[#4f46e5] font-semibold">NO ANNUAL CONTRACT</h2>
-       <p class="text-sm md:text-lg mx-auto">You don't have to be concerned about committing to our software. Unlike HackerRank, we don't require annual contracts or impose lock-in periods. </p>
-     </div>
-     <!-- icons card end  -->
-     <!-- icons card start  -->
-     <div class="p-4 text-center">
-       <img class="mx-auto mb-5 mt-5 md:mt-0" src="./images/confetti.svg" alt="features">
-       <h2 class="mb-3 text-lg md:text-xl text-[#4f46e5] font-semibold">TEST 25 CANDIDATES FOR FREE</h2>
-       <p class="text-sm md:text-lg mx-auto">Want to try our paid features without committing? No problem. You can try our platform for free and test up to 25 developers for two weeks. No credit card required.</p>
-     </div>
-     <!-- icons card end  -->
-    </div>
-    </div>
-    <!-- better alternative end -->
-    <!-- testimonitials start -->
-    <div class="bg-[#4F46E5] mt-8 md:mt-16 rounded-t-xl">
-      <div class="p-8 md:p-16 md:max-w-screen-2xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2">
-           <!-- headline & carousel buttons start -->
-           <div class="text-white">
-            <img class="mb-5 h-12" src="./images/g-reviews-logo.svg" alt="google reviews logo">
-            <h2 class="mb-8 font-semibold text-2xl md:text-3xl" >
-              Here’s what our customer say
-            </h2>
-            <!-- carousel buttons + page number  -->
-            <div class="flex items-center">
-              <button>
-                <img class="h-8 mr-4" src="./images/chevron-left.svg" alt="button left" srcset="">
-              </button>
-              <p class="text-lg opacity-75 mr-4">1/4</p>
-              <button>
-                <img class="h-8 mr-4" src="./images/chevron-right.svg" alt="button left" srcset="">
-              </button>
+        <img class="h-12 md:h-auto mx-auto mb-5 mt-5 md:mt-0" src="./images/question-mark-circle.svg" alt="features">
+        <h2 class="mb-3 text-lg md:text-xl font-semibold">Readymade Tests</h2>
+        <p class="text-sm md:text-lg mx-auto">For most skills, question banks with hundreds of questions are available. So, you don't need to create any questions.</p>
+      </div>
+      <!-- icons card end  -->
+            <!-- icons card start  -->
+            <div class="p-4 text-center">
+              <img class="h-12 md:h-auto mx-auto mb-5 mt-5 md:mt-0" src="./images/lock-closed.svg" alt="features">
+              <h2 class="mb-3 text-lg md:text-xl font-semibold">Ensure No Cheating</h2>
+              <p class="text-sm md:text-lg mx-auto">We use the world's best proctoring tool AutoProctor to prevent cheating, copying, impersonation and plagiarism detection.</p>
             </div>
-            <!-- carousel buttons end -->
-          </div>
-          <!-- headline & carousel buttons end -->
-                <!-- slides/items carousels start -->
-     <div class="mx-auto mt-8 md:mt-0 rounded-lg p-4 max-w-3xl">
-      <!-- stars -->
-      <div class="flex">
-        <img class="h-6" src="./images/star.svg" alt="">
-        <img class="h-6" src="./images/star.svg" alt="">
-        <img class="h-6" src="./images/star.svg" alt="">
-        <img class="h-6" src="./images/star.svg" alt="">
-        <img class="h-6" src="./images/star.svg" alt="">
-      </div>
-      <!-- stars end -->
-      <!-- reviews -->
-      <p class="text-lg text-white font-semibold mt-5 mb-4">Great Product for Pre-employment assessments</p>
-      <p class="text-sm md:text-lg text-white">Equip is a good platform that makes the hiring process very easy for recruiters. Its auto-proctoring capabilities have helped us greatly while giving code assessment tests for the candidates. It even has a question bank across different technologies that have helped us save time while creating quick assessment tests.</p>
-      <!-- profile -->
-      <div class="flex items-center mt-5"> 
-        <img class="h-20 mr-4 border border-dashed p-1 rounded-full" src="./images/profile-picture.png" alt="">
-        <div class="mr-8">
-          <p class="text-sm text-white font-semibold ">Dinakar G</p>
-          <p class="text-sm text-white">Head of Engineering</p>
-        </div>
-        <img class="w-1/4" src="./images/company-review.png" alt="company logo">
-      </div>
-      <!-- profile end -->
-      <!-- reviews end -->
+            <!-- icons card end  -->
     </div>
-    <!-- slides/items carousel end -->
-        </div>
+    <!-- icons end -->
+   <!-- button start -->
+   <div class="text-center mt-8 md:mt-16">
+    <a href="https://workspace.google.com/marketplace/app/timer_+_proctor/691377974459" target="_blank">
+      <button class="text-sm md:text-lg px-8 py-2 text-[#1F3B88] font-semibold bg-white rounded-full border">Sign Up for Free</button>
+    </a>
+  </div>
+   <!-- button end -->
+   </div>
+   <!-- efficient and effortless + icons end -->
+   <!-- how equip works + video start -->
+   <div class="p-8 md:p-16 mt-8 md:max-w-screen-2xl mx-auto text-white">
+    <div class="grid grid-cols-1 md:grid-cols-2 border-t">
+      <!-- headline + text start -->
+      <div class="mt-8 md:mt-16">
+        <h2 class="text-xl md:text-4xl mb-8 font-semibold">What Can Equip Do For You?</h2>
+         <!-- checklist start  -->
+         <div class="flex text-sm md:text-lg mb-8">
+          <img class="mr-4" src="./images/check-circle.svg" alt="">
+          <p>Save your time to avoid going through every application to your job or interviewing every candidate that applies to the job.</p>
+         </div>
+         <!-- checklist end -->
+          <!-- checklist start  -->
+          <div class="flex text-sm md:text-lg mb-8">
+            <img class="mr-4" src="./images/check-circle.svg" alt="">
+            <p>Create an assessment for testing technical and non-technical skills in under a minute using our Question Bank or by importing your own questions.</p>
+           </div>
+           <!-- checklist end -->
+           <!-- checklist start  -->
+           <div class="flex text-sm md:text-lg">
+            <img class="mr-4" src="./images/check-circle.svg" alt="">
+            <p>See assessment results real-time and shortlist the top candidates for interviews.</p>
+           </div>
+           <!-- checklist end -->
       </div>
+      <!-- headline + text end -->
+      <!-- video start -->
+      <div class="flex justify-center mt-8 md:mt-16">
+        <iframe width="520px" height="316px" src="https://www.youtube.com/embed/U4hhSJgOjCo" title="Equip: Hassle-free Remote Hiring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <!-- video end -->
     </div>
-    <!-- testimonitals end -->
-    <!-- faq start -->
-    <div class="p-8 md:16 mt-8 md:mt-16 md:max-w-screen-2xl mx-auto">
+   </div>
+   <!-- how equip works + video end -->
+   <!-- cta start -->
+   <div class="p-8 md:px-16 mt-8 md:max-w-screen-2xl mx-auto text-white">
+    <div class="border-t border-b py-8 md:py-20 text-center">
       <!-- headline start -->
-      <div class="text-center">
-        <p class="text-xs md:text-lg opacity-75 mb-2">— FRQUENTLY ASKED QUESTIONS</p>
-        <h2 class="font-semibold px-4 text-2xl md:text-3xl mb-8" >How do you know if<span class="text-[#4F46E5]"> Equip is the right tool</span> for your organization?</h2>
-      </div>
+      <h2 class="text-xl md:max-w-2xl md:text-3xl mx-auto font-semibold">Test 25 candidates during your 14-day free trial.
+        No credit card required.</h2>
       <!-- headline end -->
-       <!-- faq  -->
-     <div class="max-w-4xl mx-auto border rounded-lg p-2" align="center">
-      <!-- card start -->
-    <div class="p-4 mb-5 flex justify-between items-center">
-     <p class="text-xs text-left md:text-lg">How much time and money does it save my organization per month?</p>
-     <!-- hidden text -->
-     <div>
-       <p></p>
-     </div>
-     <!-- hiddenn text end -->
-     <!-- faq button -->
-     <div class="cursor-pointer">
-       <button>
-        ▶
-       </button>
-     </div>
-     <!-- faq button end -->
+        <!-- button start -->
+   <div class="text-center mt-8">
+    <a href="https://workspace.google.com/marketplace/app/timer_+_proctor/691377974459" target="_blank">
+      <button class="text-sm md:text-lg px-8 py-2 text-[#1F3B88] font-semibold bg-white rounded-full border">Start Your Free Trial TODAY!</button>
+    </a>
+  </div>
+   <!-- button end -->
     </div>
-    <!-- card end -->
-    <!-- card start -->
-    <div class="p-4 mb-5 rounded-lg flex justify-between items-center">
-     <p class="text-xs md:text-lg">What’s included in the pricing?</p>
-     <!-- hidden text -->
-     <div>
-       <p></p>
-     </div>
-     <!-- hiddenn text end -->
-     <!-- faq button -->
-     <div class="cursor-pointer">
-       <button>
-        ▶
-       </button>
-     </div>
-     <!-- faq button end -->
+   </div>
+   <!-- cta end  -->
+   <!-- faq start  -->
+   <div class="p-8 md:p-16 mt-8 md:max-w-screen-2xl mx-auto text-white">
+    <!-- headline start -->
+    <div>
+      <h2 class="text-xl md:text-3xl font-semibold text-white mb-8">FAQ</h2>
     </div>
-    <!-- card end -->
-         <!-- card start -->
-         <div class="p-4 mb-5 rounded-lg flex justify-between items-center">
-           <p class="text-left text-xs md:text-lg">Is the tool comnpatible with your existing technology systems?</p>
-           <!-- hidden text -->
-           <div>
-             <p></p>
-           </div>
-           <!-- hiddenn text end -->
-           <!-- faq button -->
-           <div class="cursor-pointer">
-             <button>
-              ▶
-             </button>
-           </div>
-           <!-- faq button end -->
-          </div>
-          <!-- card end -->
-             <!-- card start -->
-         <div class="p-4 mb-5 rounded-lg flex justify-between items-center">
-           <p class="text-left text-xs md:text-lg">Is this tool can be used for campus hiring?</p>
-           <!-- hidden text -->
-           <div>
-             <p></p>
-           </div>
-           <!-- hiddenn text end -->
-           <!-- faq button -->
-           <div class="cursor-pointer">
-             <button>
-              ▶
-             </button>
-           </div>
-           <!-- faq button end -->
-          </div>
-          <!-- card end -->
-               <!-- card start -->
-         <div class="p-4 mb-5 rounded-lg flex justify-between items-center">
-           <p class="text-left text-xs md:text-lg">Is it easy to use by everyone in your organization?</p>
-           <!-- hidden text -->
-           <div>
-             <p></p>
-           </div>
-           <!-- hiddenn text end -->
-           <!-- faq button -->
-           <div class="cursor-pointer">
-             <button>
-              ▶
-             </button>
-           </div>
-           <!-- faq button end -->
-          </div>
-          <!-- card end -->
-               <!-- card start -->
-         <div class="p-4 mb-5 rounded-lg flex justify-between items-center">
-           <p class="text-left text-xs md:text-lg">Is the level of support and customer service offered is sufficient?</p>
-           <!-- hidden text -->
-           <div>
-             <p></p>
-           </div>
-           <!-- hiddenn text end -->
-           <!-- faq button -->
-           <div class="cursor-pointer">
-             <button>
-              ▶
-             </button>
-           </div>
-           <!-- faq button end -->
-          </div>
-          <!-- card end -->
-    </div>
-    <!-- faq end -->
-    </div>
-    <!-- faq end -->
-    <!-- cta start -->
-    <div class="p-8 md:p-16 mt-8 md:mt-16 bg-[#4F46E5] rounded-t-2xl">
-      <div class="md:max-w-screen-2xl my-auto mx-auto ">
-            <!-- headline start -->
-       <div class="mx-auto my-auto text-center text-white max-w-2xl">
-        <h2 class="font-black px-4 text-2xl md:text-3xl mb-8" >Thinking Equip is the best alternative for HackerRank? Give it a try</h2>
-         <!-- button -->
-         <div class="">
-          <a href="#">
-            <button class="text-[#4F46E5] rounded px-8 py-2 bg-white">Start 14-day Free Trial</button>
-          </a>
+    <!-- headline end -->
+      <!-- item faq start -->
+      <div class="faq mb-5">
+        <div class="question">
+          <h2 class="text-sm md:text-lg font-semibold">What are the different steps in campus hiring and which steps can I use Equip for?</h2>
+          <button><box-icon name='chevron-down' type='solid' color='#ffffff' ></box-icon></button>
         </div>
-        <!-- button end -->
-        <p class="text-white mt-5"><i>*No credit card, No Committments</i></p>
+        <!-- hidden text start  -->
+        <div class="answer mt-8">
+          <p class="mb-5 text-sm md:text-lg">
+            Typically, the campus recruitment process includes four steps: pre-placement talk, conducting aptitude and technical skill tests, interviewing the shortlisted candidates and extending the job offer to the candidates. Equip helps you automate conducting aptitude and technical skill tests so that you can save time by shortlisting the most eligible candidates for interviews.
+          </p>
+        </div>
+        <!-- hidden text end -->
       </div>
-       <!-- headline end  -->
-      </div>
-    </div>
-    <!-- cta end -->
+      <!-- item faq end  --> 
+         <!-- item faq start -->
+         <div class="faq mb-5">
+          <div class="question">
+            <h2 class="text-sm md:text-lg font-semibold">What is the best price I can get for assessing many candidates?</h2>
+            <button><box-icon name='chevron-down' type='solid' color='#ffffff' ></box-icon></button>
+          </div>
+          <!-- hidden text start  -->
+          <div class="answer mt-8">
+            <p class="mb-5 text-sm md:text-lg">
+              The pricing is based on your usage. You will use one credit for every candidate attempting the assessment. One credit costs Rs. 82. We offer discounts on bulk purchases of credits. For example, you get 40% off on buying 1000 credits. All <a href="https://equip.co/pricing" target="_blank"><u>discounts</u></a> are listed here to Looking for discounts on pricing page
+            </p>
+          </div>
+          <!-- hidden text end -->
+        </div>
+        <!-- item faq end  --> 
+            <!-- item faq start -->
+            <div class="faq mb-5">
+              <div class="question">
+                <h2 class="text-sm md:text-lg font-semibold">How many students can take the assessment simultaneously?</h2>
+                <button><box-icon name='chevron-down' type='solid' color='#ffffff' ></box-icon></button>
+              </div>
+              <!-- hidden text start  -->
+              <div class="answer mt-8">
+                <p class="mb-5 text-sm md:text-lg">
+                  Our customers have successfully conducted over 8000 tests at once. If your requirement exceeds this number, <a href="#"><u>chat with us</u></a> to find out how we can customise it. 
+                </p>
+              </div>
+              <!-- hidden text end -->
+            </div>
+            <!-- item faq end  --> 
+               <!-- item faq start -->
+               <div class="faq mb-5">
+                <div class="question">
+                  <h2 class="text-sm md:text-lg font-semibold">What types of tests can I conduct on Equip?</h2>
+                  <button><box-icon name='chevron-down' type='solid' color='#ffffff' ></box-icon></button>
+                </div>
+                <!-- hidden text start  -->
+                <div class="answer mt-8">
+                  <p class="mb-5 text-sm md:text-lg">
+                    You can conduct Quizzes, (Aptitude Test, Language Test, Attention to Detail) Programming Challenges (Coding, CSS, SQL), Spreadsheet Skills Test, and Video Interview.
+                    <br>
+You can also create and customise all of the above with your own content.
+                  </p>
+                </div>
+                <!-- hidden text end -->
+              </div>
+              <!-- item faq end  --> 
+                         <!-- item faq start -->
+                         <div class="faq mb-5">
+                          <div class="question">
+                            <h2 class="text-sm md:text-lg font-semibold">Are Equip assessments automatically graded?</h2>
+                            <button><box-icon name='chevron-down' type='solid' color='#ffffff' ></box-icon></button>
+                          </div>
+                          <!-- hidden text start  -->
+                          <div class="answer mt-8">
+                            <p class="mb-5 text-sm md:text-lg">
+                              Yes, all assessments are graded automatically except tests containing Video Interviews, CSS Challenges and Short Text Answers.
+                            </p>
+                          </div>
+                          <!-- hidden text end -->
+                        </div>
+                        <!-- item faq end  --> 
+                          <!-- item faq start -->
+                          <div class="faq mb-5">
+                            <div class="question">
+                              <h2 class="text-sm md:text-lg font-semibold">Why is Equip’s proctoring the best?</h2>
+                              <button><box-icon name='chevron-down' type='solid' color='#ffffff' ></box-icon></button>
+                            </div>
+                            <!-- hidden text start  -->
+                            <div class="answer mt-8">
+                              <p class="mb-5 text-sm md:text-lg">
+                                Equip is built by the same team that built AutoProctor. All Equip assessments AutoProctor for proctoring and we have successfully conducted <a href="https://workspace.google.com/marketplace/app/timer_+_proctor/691377974459" target="_blank"><u>15 million proctored assessments</u></a> across the world. 
+
+                              </p>
+                            </div>
+                            <!-- hidden text end -->
+                          </div>
+                          <!-- item faq end  --> 
+                           <!-- item faq start -->
+                           <div class="faq mb-5">
+                            <div class="question">
+                              <h2 class="text-sm md:text-lg font-semibold">Can I send a unique link to every student for an Equip assessment?</h2>
+                              <button><box-icon name='chevron-down' type='solid' color='#ffffff' ></box-icon></button>
+                            </div>
+                            <!-- hidden text start  -->
+                            <div class="answer mt-8">
+                              <p class="mb-5 text-sm md:text-lg">
+                                Yes, you can send a unique one-time URL to each candidate. This reduces the chances of candidates cheating on the test by sharing the assessment link with others.
+                              </p>
+                            </div>
+                            <!-- hidden text end -->
+                          </div>
+                          <!-- item faq end  --> 
+   </div>
+   <!-- faq end -->
+   <script src="./app.js"></script>
+   
 </body>
 </html>
